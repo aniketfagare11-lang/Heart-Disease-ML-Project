@@ -1,93 +1,78 @@
-# Heart Disease Risk Prediction ❤️📊
+❤️ Heart Disease Prediction Using Machine Learning
+📌 Overview
 
-This project focuses on **Heart Disease Risk Prediction** using data analysis and machine learning techniques.  
-All steps are implemented in a **Jupyter Notebook** (`Cpro.ipynb`) with a structured, step-by-step approach.
+This project predicts the presence of heart disease using multiple machine learning classification algorithms.
+Different models are trained and evaluated to determine the most reliable model based on performance metrics.
 
----
+📂 Repository Structure
+├── Cpro.ipynb        # Jupyter Notebook containing full implementation
+├── README.md        # Project documentation
 
-## 📌 Project Information
+⚙️ Machine Learning Algorithms Used
 
-**Project Title:** Heart Disease Risk Prediction  
-**File:** Cpro.ipynb  
-**Purpose:**  
-To analyze a heart disease dataset, clean the data, visualize insights, and build a predictive model.
+K-Nearest Neighbors (KNN)
 
----
+Support Vector Classifier (SVC)
 
-## 📂 Dataset Information
+Decision Tree (DT)
 
-The notebook works on a dataset related to **heart disease** and includes:
-- Patient-related health attributes
-- Target variable indicating heart disease risk
+Random Forest (RF)
 
----
+Logistic Regression (LR)
 
-## 🛠️ Steps Followed in the Notebook
+📊 Model Evaluation Metrics
 
-### 🔹 Step 1: Load the Dataset
-- Dataset is loaded into the notebook for analysis.
+Models were compared using:
 
----
+Training Accuracy
 
-### 🔹 Step 2: Checking Dataset Information
-- Dataset structure is examined
-- Columns and data types are reviewed
+Testing Accuracy
 
----
+Cross-Validation (CV) Score
 
-### 🔹 Step 3: Checking Null Values
-- Verification of missing/null values in the dataset
+🔍 Performance Comparison
+Algorithm	Train Accuracy	Test Accuracy	CV Score
+KNN	0.88	0.79	0.74
+SVC	0.85	0.83	0.74
+DT	0.79	0.71	0.74
+RF	1.00	0.83	0.74
+LR	0.85	0.82	0.74
+🏆 Best Model
 
----
+Support Vector Classifier (SVC) is selected as the best model because:
 
-### 🔹 Step 4: Checking Count
-- Count of records and values is analyzed
+High test accuracy
 
----
+Balanced training and testing performance
 
-### 🔹 Step 5: Graphical Representation
-- Data visualization is performed
-- Helps in understanding patterns and trends
+Minimal overfitting compared to Random Forest
 
----
+Strong generalization capability
 
-### 🔹 Step 6: Data Wrangling
-- Data cleaning and preprocessing
-- Preparing data for model building
+📝 Conclusion
 
----
+The results show that Support Vector Classifier (SVC) provides the most reliable performance for heart disease prediction. While Random Forest achieved perfect training accuracy, it showed signs of overfitting. SVC maintains a strong balance between accuracy and generalization, making it the most suitable model for this dataset.
 
-### 🔹 Step 7: Data Modeling
-- Machine learning model is applied
-- Used to predict heart disease risk
+🛠️ Technologies & Libraries
 
----
+Python
 
-## 🎯 Outcome
+Pandas
 
-- Cleaned and processed dataset
-- Visual understanding of data
-- Predictive model for heart disease risk
+NumPy
 
----
+Matplotlib
 
-## 📌 Tools & Technologies
+Seaborn
 
-- Python
-- Jupyter Notebook
-- Data Analysis & Visualization Libraries
-- Machine Learning Algorithms
+Scikit-learn
 
----
+🚀 Future Scope
 
-## 🚀 How to Run
+Hyperparameter tuning
 
-1. Clone the repository
-2. Open `Cpro.ipynb` in Jupyter Notebook
-3. Run cells step by step to see results
+Feature selection and scaling
 
----
+Try advanced ensemble models
 
-## 📄 License
-
-This project is for **educational purposes**.
+Model deployment using Flask or Streamlit
