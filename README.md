@@ -1,78 +1,70 @@
-❤️ Heart Disease Prediction Using Machine Learning
-📌 Overview
+# ❤️ Heart Disease Prediction using Machine Learning  
 
-This project predicts the presence of heart disease using multiple machine learning classification algorithms.
-Different models are trained and evaluated to determine the most reliable model based on performance metrics.
+> A machine learning project to predict heart disease by comparing multiple classification algorithms and selecting the most reliable model.
 
-📂 Repository Structure
-├── Cpro.ipynb        # Jupyter Notebook containing full implementation
-├── README.md        # Project documentation
+---
 
-⚙️ Machine Learning Algorithms Used
+## ✨ Project Highlights
+- Implemented **5 Machine Learning models**
+- Compared models using **Train Accuracy, Test Accuracy & CV Score**
+- Identified the **best-performing and well-generalized model**
+- Clean and beginner-friendly implementation
 
-K-Nearest Neighbors (KNN)
+---
 
-Support Vector Classifier (SVC)
+## 📁 Repository Structure
+├── Cpro.ipynb # Complete Jupyter Notebook
+├── README.md # Project documentation
 
-Decision Tree (DT)
 
-Random Forest (RF)
+---
 
-Logistic Regression (LR)
+## ⚙️ Algorithms Implemented
+- 🔹 K-Nearest Neighbors (KNN)
+- 🔹 Support Vector Classifier (SVC)
+- 🔹 Decision Tree (DT)
+- 🔹 Random Forest (RF)
+- 🔹 Logistic Regression (LR)
 
-📊 Model Evaluation Metrics
+---
 
-Models were compared using:
+## 📊 Model Performance Comparison
 
-Training Accuracy
+| Algorithm | Train Accuracy | Test Accuracy | CV Score |
+|---------|---------------|--------------|----------|
+| KNN | 0.88 | 0.79 | 0.74 |
+| **SVC** | 0.85 | **0.83** | 0.74 |
+| DT | 0.79 | 0.71 | 0.74 |
+| RF | **1.00** | **0.83** | 0.74 |
+| LR | 0.85 | 0.82 | 0.74 |
 
-Testing Accuracy
+---
 
-Cross-Validation (CV) Score
+## 🏆 Best Model: Support Vector Classifier (SVC)
+- High test accuracy  
+- Balanced training and testing performance  
+- Minimal overfitting  
+- Strong generalization ability  
 
-🔍 Performance Comparison
-Algorithm	Train Accuracy	Test Accuracy	CV Score
-KNN	0.88	0.79	0.74
-SVC	0.85	0.83	0.74
-DT	0.79	0.71	0.74
-RF	1.00	0.83	0.74
-LR	0.85	0.82	0.74
-🏆 Best Model
+Although Random Forest achieved perfect training accuracy, it showed signs of **overfitting**. SVC proved to be more reliable.
 
-Support Vector Classifier (SVC) is selected as the best model because:
+---
 
-High test accuracy
+## 📝 Conclusion
+This project demonstrates how different machine learning algorithms perform on a heart disease dataset. Based on evaluation metrics, **Support Vector Classifier (SVC)** emerged as the most reliable model due to its balanced accuracy and generalization performance.
 
-Balanced training and testing performance
+---
 
-Minimal overfitting compared to Random Forest
+## 🛠️ Tech Stack
+- 🐍 Python  
+- 📊 Pandas & NumPy  
+- 📈 Matplotlib & Seaborn  
+- 🤖 Scikit-learn  
 
-Strong generalization capability
+---
 
-📝 Conclusion
-
-The results show that Support Vector Classifier (SVC) provides the most reliable performance for heart disease prediction. While Random Forest achieved perfect training accuracy, it showed signs of overfitting. SVC maintains a strong balance between accuracy and generalization, making it the most suitable model for this dataset.
-
-🛠️ Technologies & Libraries
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Scikit-learn
-
-🚀 Future Scope
-
-Hyperparameter tuning
-
-Feature selection and scaling
-
-Try advanced ensemble models
-
-Model deployment using Flask or Streamlit
+## 🚀 Future Enhancements
+- Hyperparameter tuning  
+- Feature selection & scaling  
+- Try advanced models (XGBoost, Gradient Boosting)  
+- Deploy using Flask or Stream.
